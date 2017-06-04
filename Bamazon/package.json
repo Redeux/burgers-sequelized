@@ -1,0 +1,34 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "commandline shopping app with a mysql backend ",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redeux/Bamazon.git"
+  },
+  "keywords": [
+    "shopping",
+    "mysql"
+  ],
+  "author": "Phil Sautter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Redeux/Bamazon/issues"
+  },
+  "homepage": "https://github.com/Redeux/Bamazon#readme",
+  "dependencies": {
+    "mysql": "^2.13.0",
+    "promptly": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

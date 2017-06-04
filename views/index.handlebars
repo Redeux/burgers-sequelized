@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="assets/img/burger.png" class="img-responsive center-block">
+      <h1 class="display-1 text-center">Eat-Da-Burger</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <p class="text-center"><strong>Click to Eat</strong></p>
+      <div class="list-group">
+        {{#each uneaten}}
+        <form action="/{{this.id}}?_method=DELETE" method="POST">
+          <button type="submit" class="list-group-item">{{this.burger_name}}</button>
+        </form>
+        {{/each}}
+      </div>
+    </div>
+    <div class="col-md-4">
+      <p class="text-center"><strong>Make a new burger</strong></p>
+      <form method="POST" action="/">
+        <div class="form-group text-center">
+          <textarea class="form-control" rows="3" name="burger"></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <p class="text-center"><strong>Eaten</strong></p>
+      <div class="list-group">
+        {{#each eaten}}
+        <a href="#" class="list-group-item disabled">{{this.burger_name}}</a> {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
